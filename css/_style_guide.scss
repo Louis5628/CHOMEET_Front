@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 微軟正黑體;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+a {
+    color: unset;
+}
+a:hover {
+    color: unset;
+    text-decoration: unset;
+}
+a:visited {
+    color: unset;
+}
+
+
+:root {
+    h1 {
+        font-weight: bold;
+        font-size: 32px;
+        letter-spacing: 4px;
+        margin: 0;
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 28px;
+        letter-spacing: 3px;
+        margin: 0;
+    }
+
+    h3 {
+        font-weight: normal;
+        font-size: 24px;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    h4 {
+        font-weight: normal;
+        font-size: 22px;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    h5 {
+        font-weight: normal;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 0;
+    }
+
+    p {
+        font-size: 16px;
+        margin: 0%;
+    }
+}
+
+@media (min-width: 768px)  {
+
+    :root{
+
+        h1 {
+            font-weight: bold;
+            font-size: 44px;
+            letter-spacing: 5px;
+            margin: 0;
+        }
+    
+        h2 {
+            font-weight: bold;
+            font-size: 36px;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+    
+        h3 {
+            font-weight: normal;
+            font-size: 30px;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+    
+        h4 {
+            font-weight: normal;
+            font-size: 25px;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+    
+        h5 {
+            font-weight: normal;
+            font-size: 20px;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+    
+        p {
+            font-size: 18px;
+            margin: 0%;
+        }
+    }
+
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+//背景色
+$bgc-white: #ffffff;
+$bgc-decorate: #d7c8bf;
+$bgc-certificate: #60403a;
+$bgc-nav: #543e33;
+$bgc-nav-open: #805023;
+$bgc-footer: #3d312e;
+$bdc-product-hover: #000000;
+$bgc-about: #c69c6D;
+
+//文字色
+$fc-title: #4d4d4d;
+$fc-title-en: #808080;
+$fc-content: #4d4d4d;
+$fc-nav: #ffffff;
+$fc-footer: #ffffff;
+$fc-slogan: #ffffff;
+$fc-link: #bb916d;
+$comp-link: #bb916d;
+$fc-line: #bb916d;
+$fc-white: #ffffff;
+
+//元件
+$comp-news-date: #c6a280;
+$comp-product-qty-btn: #b9afa7;
+$comp-product-qty-btn-hover: rgb(144,139,139);
+$comp-product-cart-btn: #c4817e;
+$comp-product-cart-btn-hover: #955656;
+$comp-link: #bb916d;
+$comp-link-hover: #964915;
+
+// $color-gray-1: #4d4d4d;
+// $color-gray-2: #4c4c4b;
+// $color-gray-3: #808080;
+// $color-brown: #c69c6d;
+$white: #ffffff;
+
+// $color-pink-hover: #f5e2d6;
+// $color-brown-1-honver: #e6d5bc;
+// $color-brown-2-honver: #d0ae85;
+// $color-brown-3-hover: #ebe2d8;
+// $color-gray-1-hover: #b9afa7;
+// $color-orange-hover: #f6c7a5;
+// $color-red: red;

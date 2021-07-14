@@ -1,0 +1,586 @@
+@import "_style_guide.scss";
+
+main {
+    transition: 1s;
+    position: relative;
+
+    .banner {
+        width: 100%;
+        height: 575px;
+        background-image: url(/img/about-1920x575.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .title {
+        width: 510px;
+        height: 140px;
+        padding-top: 54px;
+        background-color: $bgc-white;
+        text-align: center;
+        position: absolute;
+        top: 488px;
+        left: calc(50% - 255px);
+
+        h1 {
+            color: $fc-title;
+        }
+
+        h5 {
+            color: $fc-title-en;
+            letter-spacing: 5px;
+            margin-top: 10px;
+        }
+    }
+
+    .brand {
+        margin-top: 258px;
+        width: 100%;
+        display: flex;
+
+        .photo {
+            width: 52%;
+            height: 900px;
+            background-image: url(/img/about1008x900.jpg);
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+        }
+
+        .story {
+            width: 48%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+            .txt {
+                width: 508px;
+                height: 460px;
+                position: relative;
+
+                h2 {
+                    color: $fc-title;
+                }
+
+                hr {
+                    width: 172px;
+                    height: 1px;
+                    background-color: $fc-line;
+                    position: absolute;
+                    left: 26px;
+                    top: 40px;
+                }
+
+                p {
+                    margin-top: 99px;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+
+    .bg-chocolate {
+        width: 1059px;
+        height: 366px;
+        background-image: url(/img/about1059x366.png);
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        margin-top: 152px;
+        position: relative;
+        left: -79px;
+        margin-bottom: 20px;
+    }
+
+    .tree-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .txt {
+            width: 630px;
+            height: 440px;
+            margin-left: 160px;
+
+            .title-group {
+                position: relative;
+                h2 {
+                    letter-spacing: 2px;
+                }
+
+                hr {
+                    width: 220px;
+                    height: 1px;
+                    background-color: $fc-line;
+                    position: absolute;
+                    left: 25px;
+                    top: 40px;
+                }
+            }
+
+            p {
+                margin-top: 99px;
+                line-height: 50px;
+            }
+            .down-sec{
+                margin-top: 30px;
+            }
+        }
+        .tree {
+            width: 960px;
+            height: 940px;
+            background-image: url(/img/about-new-960x940.jpg);
+            background-position: right;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .cocoa {
+            width: 620px;
+            height: 450px;
+            background-image: url(/img/about-new-620x450.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 0px;
+            top: 777px;
+        }
+        .tree-bg {
+            width: 100%;
+            height: 688px;
+            background-color: $bgc-decorate;
+            position: absolute;
+            bottom: -104px;
+            z-index: -1;
+        }
+    }
+
+    .bean {
+        width: 580px;
+        height: 270px;
+        background-image: url(/img/about580x270.png);
+        background-position: right;
+        background-size: cover;
+        position: relative;
+        top: 200px;
+        left: -40px;
+    }
+
+    .cer-group {
+        margin-top: 100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 200px;
+
+        h2 {
+            letter-spacing: 3px;
+        }
+
+        hr {
+            width: 210px;
+            height: 1px;
+            background-color: $fc-line;
+            position: relative;
+            top: -5px;
+        }
+
+        .certificate {
+            margin-top: 50px;
+            width: 69%;
+            height: 688px;
+            background-color: $bgc-certificate;
+            position: relative;
+
+            .cer-1,
+            .cer-2,
+            .cer-3,
+            .cer-4 {
+                width: 308px;
+                height: 442px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+            }
+            .left {
+                .cer-1 {
+                    background-image: url(/img/about-new-01-308x442.jpg);
+                    left: 85px;
+                    top: 72px;
+                }
+                .cer-2 {
+                    background-image: url(/img/about-new-02-308x442.jpg);
+                    left: 330px;
+                    top: 180px;
+                }
+            }
+            .right {
+                .cer-3 {
+                    background-image: url(/img/about-new-03-308x442.jpg);
+                    right: 320px;
+                    top: 75px;
+                }
+                .cer-4 {
+                    background-image: url(/img/about-new-04-308x442.jpg);
+                    right: 85px;
+                    top: 185px;
+                }
+            }
+        }
+
+        .cer-txt {
+            width: 52%;
+
+            p {
+                margin-top: 99px;
+                line-height: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    main {
+        .brand {
+            margin-top: 200px;
+            .story {
+                align-items: flex-start;
+            }
+        }
+
+        .bg-chocolate {
+            width: 700px;
+            height: 240px;
+            margin-top: 100px;
+            left: -50px;
+        }
+
+        .tree-group {
+            .txt {
+                width: 80%;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+            .tree {
+                width: 620px;
+                height: 620px;
+            }
+            .cocoa {
+                width: 400px;
+                height: 250px;
+                top: 600px;
+            }
+            .tree-bg {
+                width: 100%;
+                height: 508px;
+            }
+        }
+
+        .bean {
+            width: 500px;
+            height: 230px;
+            top: 60px;
+            left: -40px;
+        }
+
+        .cer-group {
+            .certificate {
+                margin-top: 40px;
+                width: 100%;
+                .cer-1,
+                .cer-2,
+                .cer-3,
+                .cer-4 {
+                    width: 282px;
+                    height: 405px;
+                }
+            }
+            .cer-txt {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    main {
+        .brand {
+            margin-top: 150px;
+            .photo {
+                margin-right: 80px;
+                background-position: center;
+            }
+            .story {
+                margin-top: 80px;
+            }
+        }
+
+        .bg-chocolate {
+            width: 600px;
+            height: 210px;
+            top: 0px;
+        }
+
+        .tree-group {
+            display: flex;
+
+            .txt {
+                p {
+                    margin-top: 50px;
+                }
+            }
+            .tree {
+                width: 620px;
+                height: 620px;
+            }
+            .cocoa {
+                width: 400px;
+                height: 250px;
+                top: 600px;
+            }
+            .tree-bg {
+                width: 100%;
+                height: 480px;
+                bottom: -40px;
+            }
+        }
+
+        .bean {
+            width: 500px;
+            height: 230px;
+            top: 10px;
+            left: -40px;
+        }
+
+        .cer-group {
+            .certificate {
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                .left,
+                .right {
+                    width: 50%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .cer-1,
+                .cer-2,
+                .cer-3,
+                .cer-4 {
+                    position: unset;
+                    margin: 0px 5px;
+                }
+            }
+            .cer-txt {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 888px) {
+    main {
+        .brand {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 150px;
+            .photo {
+                width: 100%;
+            }
+            .story {
+                width: 100%;
+            }
+        }
+
+        .bg-chocolate {
+            width: 70%;
+            height: 200px;
+            margin-top: 250px;
+        }
+
+        .tree-group {
+            margin-top: 150px;
+            display: flex;
+            flex-direction: column;
+
+            .txt {
+                p {
+                    margin-top: 60px;
+                }
+            }
+            .tree {
+                width: 620px;
+                height: 620px;
+                margin-top: 120px;
+            }
+            .cocoa {
+                width: 400px;
+                height: 250px;
+                top: 1050px;
+            }
+            .tree-bg {
+                width: 100%;
+                height: 680px;
+                top: 90px;
+            }
+        }
+
+        .bean {
+            width: 500px;
+            height: 230px;
+            top: 40px;
+            left: -40px;
+        }
+        .cer-group {
+            .certificate {
+                padding: 10px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                .left,
+                .right {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+                .left {
+                    margin: 20px 0px;
+                    .cer-1 {
+                        margin-right: 10px;
+                    }
+                }
+                .right {
+                    margin-bottom: 20px;
+                    .cer-3 {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 536px) {
+    main {
+        .banner {
+            width: 100%;
+            height: 300px;
+        }
+        .title {
+            width: 250px;
+            height: 140px;
+            padding-top: 25px;
+            background-color: rgb(255, 255, 255);
+            text-align: center;
+            position: absolute;
+            top: 260px;
+            left: calc(50% - 125px);
+        }
+
+        .brand {
+            .photo {
+                height: 550px;
+            }
+            .story {
+                width: 90%;
+                margin: auto;
+                margin-top: 80px;
+                .txt {
+                    p {
+                        margin-top: 50px;
+                    }
+                    hr {
+                        left: 26px;
+                        top: 30px;
+                        width: 118px;
+                    }
+                }
+            }
+        }
+
+        .tree-group {
+            margin-top: 100px;
+            .txt {
+                margin-bottom: 40px;
+                margin-top: 80px;
+                .title-group {
+                    margin-top: -80px;
+                }
+                p {
+                    line-height: 40px;
+                }
+            }
+            .tree {
+                width: 100%;
+                height: 450px;
+                margin-top: 110px;
+                @media (max-width: 414px) {
+                    margin-top: 90px;
+                }
+            }
+            .cocoa {
+                width: 100%;
+                height: 300px;
+                top: 1060px;
+            }
+            .tree-bg {
+                width: 100%;
+                height: 720px;
+                top: 90px;
+            }
+        }
+
+        .bg-chocolate {
+            width: 100%;
+            height: 200px;
+            margin-top: 200px;
+            left: -10px;
+            @media (max-width: 414px) {
+                margin-top: 350px;
+            }
+        }
+
+        .bean {
+            width: 100%;
+            height: 250px;
+            top: 270px;
+            left: -20px;
+            @media (max-width: 414px) {
+                width: 70%;
+                height: 120px;
+                left: -15px;
+            }
+        }
+
+        .cer-group {
+            margin-top: 300px;
+            margin-bottom: 100px;
+            hr {
+                width: 150px;
+            }
+
+            .certificate {
+                padding: 10px;
+                height: auto;
+
+                .cer-1,
+                .cer-2,
+                .cer-3,
+                .cer-4 {
+                    width: 50%;
+                    height: 255px;
+                }
+            }
+            .cer-txt {
+                p {
+                    margin-top: 60px;
+                }
+            }
+        }
+    }
+}

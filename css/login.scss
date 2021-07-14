@@ -1,0 +1,154 @@
+@import "_style_guide.scss";
+
+main {
+    transition: 1s;
+    position: relative;
+
+    .banner {
+        width: 100%;
+        height: 575px;
+        background-image: url(/img/member-banner-1920x575.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .title {
+        width: 510px;
+        height: 140px;
+        padding-top: 54px;
+        background-color: $fc-white;
+        text-align: center;
+        position: absolute;
+        top: 488px;
+        left: calc(50% - 255px);
+
+        h1 {
+            letter-spacing: 5px;
+            font-weight: 600;
+            color:$fc-title;
+        }
+
+        h5 {
+            color: $fc-title-en;
+            letter-spacing: 5px;
+            margin-top: 10px;
+        }
+    }
+
+    .link-group{
+        padding-top: 150px;
+        width: 800px;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+
+        .edit, .order-list,.logout{
+            width: 200px;
+            height: 50px;
+            border: 2px solid $comp-news-date;
+            color: $comp-news-date;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a:hover{
+            background-color: $bgc-decorate;
+            color: $bgc-white;
+        }
+
+        .login{
+            width: 200px;
+            height: 50px;
+            background-color: $comp-news-date;
+            color: $bgc-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    }
+
+    .login-area {
+        padding-top: 100px;
+        margin: 100px 0px;
+        margin: auto;
+        max-width: 400px;
+
+        input {
+            width: 100%;
+            height: 50px;
+            margin: 10px 0px;
+        }
+
+        .mytag {
+            font-size: 22px;
+            margin: 10px 0px;
+        }
+
+        
+        .button-area {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .mybtn {
+                background-color: $comp-product-cart-btn;
+                color: $fc-white;
+                width: 230px;
+                font-size: 24px;
+                font-weight: 600;
+                margin-top: 20px;
+            }
+
+            .mybtn:hover {
+                background-color: $comp-product-cart-btn-hover;
+            }
+        }
+
+        .regi {
+            text-align: right;
+            width: 100%;
+            color: $bdc-product-hover;
+            margin: 50px 0px;
+        }
+
+        .regi:hover {
+            color: $comp-product-cart-btn-hover;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 536px) {
+    main {
+        .banner {
+            width: 100%;
+            height: 300px;
+        }
+        .title {
+            width: 250px;
+            height: 140px;
+            padding-top: 25px;
+            background-color: $fc-white;
+            text-align: center;
+            position: absolute;
+            top: 260px;
+            left: calc(50% - 125px);
+            h1 {
+                letter-spacing: 2px;
+            }
+        }
+        .login-area {
+            max-width: 80%;
+        }
+    }
+}

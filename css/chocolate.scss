@@ -1,0 +1,320 @@
+@import "_style_guide.scss";
+
+main {
+    width: 100%;
+    position: relative;
+
+    .banner {
+        width: 100%;
+        height: 575px;
+        background-image: url(/img/knowcoco-banner-1920x575.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .title {
+        width: 510px;
+        height: 140px;
+        padding-top: 54px;
+        background-color: $bgc-white;
+        text-align: center;
+        position: absolute;
+        top: 488px;
+        left: calc(50% - 255px);
+
+        h1 {
+            letter-spacing: 5px;
+            font-weight: 600;
+            color: $fc-title;
+        }
+
+        h5 {
+            color: $fc-title-en;
+            letter-spacing: 5px;
+            margin-top: 10px;
+        }
+    }
+
+    .cocoa {
+        margin: auto;
+        margin-top: 156px;
+        width: 85%;
+        height: 805px;
+        background-image: url(/img/knowcoco-1637x805.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .content {
+        margin: auto;
+        margin-top: 80px;
+        width: 58%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .cocoa-title{
+
+            position: relative;
+
+            h2 {
+                width: 300px;
+                letter-spacing: 5px;
+                position: absolute;
+                left: calc(100% - 150px);
+
+                @media (max-width: 414px) {
+                    left: calc(100% - 120px);
+                    top: -10px;
+                }
+            }
+    
+            hr {
+                width: 200px;
+                height: 1px;
+                background-color: $fc-line;
+                position: absolute;
+                left: -125px;
+                top: 36px;
+
+                @media (max-width: 768px) {
+                    width: 190px;
+                    left: calc(100% - 130px);
+                    top: 35px;
+                }
+    
+                @media (max-width: 414px) {
+                    width: 180px;
+                    left: calc(100% - 100px);
+                    top: 20px;
+                }
+            }
+        }
+
+        p {
+            margin: auto;
+            margin-top: 100px;
+            line-height: 50px;
+
+            @media (max-width: 414px) {
+                margin-top: 60px;
+                line-height: 45px;
+                width: 95%;
+            }
+        }
+    }
+
+    .plant {
+        width: 100%;
+        display: flex;
+        margin-top: 304px;
+        margin-bottom: 100px;
+
+        .photo-group {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                margin-right: 45px;
+                .pic-1 {
+                    background-image: url(/img/knowcoco-01-523x520.jpg);
+                    margin-bottom: 45px;
+                }
+                .pic-3 {
+                    background-image: url(/img/knowcoco-03-523x520.jpg);
+                }
+            }
+
+            .right {
+                margin-top: 77px;
+                .pic-2 {
+                    background-image: url(/img/knowcoco-02-523x520.jpg);
+                    margin-bottom: 45px;
+                }
+                .pic-4 {
+                    background-image: url(/img/knowcoco-04-523x520.jpg);
+                }
+            }
+
+            .pic-1,
+            .pic-2,
+            .pic-3,
+            .pic-4 {
+                width: 524px;
+                height: 520px;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        .method {
+            .method-content {
+                margin: auto;
+                width: 70%;
+                margin-top: 100px;
+                position: relative;
+
+                .method-title {
+                    h2 {
+                        letter-spacing: 5px;
+                        text-align: left;
+                    }
+
+                    hr {
+                        width: 160px;
+                        height: 1px;
+                        background-color: $fc-line;
+                        position: absolute;
+                        top: 36px;
+                        left: 26px;
+
+                        @media (max-width: 768px) {
+                            width: 150px;
+                            top: 33px;
+                            left: 26px;
+                        }
+                    }
+                }
+
+                p {
+                    margin: auto;
+                    margin-top: 50px;
+                    line-height: 60px;
+
+                    @media (max-width: 414px) {
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1750px) {
+    .plant {
+        .photo-group {
+            width: 50%;
+            flex-direction: column;
+            align-items: flex-end;
+            .left {
+                margin-right: 0px !important;
+            }
+            .right {
+                margin-top: 45px !important;
+            }
+        }
+
+        .method {
+            width: 50%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: start;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .plant {
+        flex-direction: column;
+        .photo-group {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            .left {
+                margin-right: 0px !important;
+            }
+            .right {
+                margin-top: 45px !important;
+            }
+        }
+
+        .method {
+            margin: auto;
+            width: 100%;
+            .method-content {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        .cocoa {
+            width: 100%;
+            height: 600px;
+        }
+        .content {
+            width: 90%;
+        }
+    }
+    .plant {
+        .method {
+            .method-content {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 536px) {
+    main {
+        .banner {
+            width: 100%;
+            height: 300px;
+        }
+        .title {
+            width: 250px;
+            height: 140px;
+            padding-top: 25px;
+            top: 260px;
+            left: calc(50% - 125px);
+            h1 {
+                letter-spacing: 2px;
+            }
+        }
+
+        .cocoa {
+            width: 100%;
+            height: 505px;
+        }
+
+        .content {
+            width: 90%;
+        }
+
+        .plant {
+            margin-top: 100px;
+            .photo-group {
+                flex-direction: column;
+                justify-content: unset;
+                .left {
+                    width: 100%;
+                    margin: 0px;
+                    .pic-1,
+                    .pic-3 {
+                        width: 100%;
+                        height: 400px;
+                    }
+                }
+                .right {
+                    width: 100%;
+                    margin: 0px;
+                    .pic-2,
+                    .pic-4 {
+                        width: 100%;
+                        height: 400px;
+                    }
+                }
+            }
+            .method {
+                .method-content{
+                    width: 85%;
+
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>巧遇農情 - 修改會員資料 Member Edit</title>
+    <!-- about CSS -->
+    <link rel="stylesheet" href="/css/member-oeder-list.css">
+    <!-- datatable CDN -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Bootstrap 4.6 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>巧遇農情 - 訂單狀態查詢 Order List</title>
+</head>
+
+<body>
+
+    <nav>
+
+    </nav>
+
+
+    <main>
+        <div class="banner"></div>
+        <div class="title">
+            <h1>會員中心</h1>
+            <h5>Member Center</h5>
+        </div>
+
+        <div class="link-group">
+
+            <a href="member-edit.html" class="edit">
+                <h4>修改會員資料</h4>
+            </a>
+            <div class="order-list">
+                <h4>訂單狀態查詢</h4>
+            </div>
+            <a href="#" class="logout">
+                <h4>會員登出</h4>
+            </a>
+        </div>
+
+        <div class="row justify-content-center my-5">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <table id="example" class="display" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>訂單日期</th>
+                                    <th>訂單編號</th>
+                                    <th>訂單總額</th>
+                                    <th>訂單狀態</th>
+                                    <th>付款狀態</th>
+                                    <th>出貨狀態</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>20201-07-14</td>
+                                    <td>20210714008</td>
+                                    <td>$2,680</td>
+                                    <td>訂單完成</td>
+                                    <td>已付款</td>
+                                    <td>已出貨</td>
+                                </tr>
+
+                                <tr>
+                                    <td>20201-07-14</td>
+                                    <td>20210714008</td>
+                                    <td>$2,680</td>
+                                    <td>訂單完成</td>
+                                    <td>已付款</td>
+                                    <td>已出貨</td>
+                                </tr>
+
+                                <tr>
+                                    <td>20201-07-14</td>
+                                    <td>20210714008</td>
+                                    <td>$2,680</td>
+                                    <td>訂單完成</td>
+                                    <td>已付款</td>
+                                    <td>已出貨</td>
+                                </tr>
+
+                            </tbody>
+
+                            <tfoot>
+                                <tr>
+                                    <th>訂單日期</th>
+                                    <th>訂單編號</th>
+                                    <th>訂單總額</th>
+                                    <th>訂單狀態</th>
+                                    <th>付款狀態</th>
+                                    <th>出貨狀態</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+    <script src="{{ asset('/js/tw-city-selector.js') }}"></script>
+    <script>
+        new TwCitySelector({
+            el: '.city-selector-set',
+            elCounty: '.county',
+            elDistrict: '.district',
+            elZipcode: '.zipcode'
+        });
+    </script>
+
+
+    <!-- atatable -->
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+
+    </script>
+
+</body>
+
+</html>

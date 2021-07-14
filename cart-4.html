@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- about CSS -->
+    <link rel="stylesheet" href="/css/cart-4.css">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Bootstrap 4.6 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>巧遇農情 - 購物訂單完成 Order Completed</title>
+</head>
+
+<body>
+
+    <nav>
+
+    </nav>
+
+
+    <main>
+        <div class="banner"></div>
+        <div class="title">
+            <h1>購物車</h1>
+            <h5>Shopping Cart</h5>
+        </div>
+
+        <div class="container">
+
+            
+            <!-- 四個步驟 -->
+            <div class="row step-group">
+                <div class="col-3 box s1">
+                    <div class="circle c1">1</div>
+                    <h4 class="txt t1">確認商品明細</h4>
+                </div>
+                <div class="col-3 box s2">
+                    <div class="circle c2">2</div>
+                    <h4 class="txt t2">付款寄送方式</h4>
+                </div>
+                <div class="col-3 box s3">
+                    <div class="circle c3">3</div>
+                    <h4 class="txt t3">確認訂單明細</h4>
+                </div>
+                <div class="col-3 box s4">
+                    <div class="circle c4">4</div>
+                    <h4 class="txt t4">購物訂單完成</h4>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="order-done">
+                訂單已成立，我們將盡快為您出貨，謝謝您！
+            </div>
+
+            <hr>
+
+           <!-- 商品列表，縮版會隱藏 -->
+           <div class="list d-flex flex-wrap">
+            <div class="col-sm-12 col-md-6 title-txt product-name">商品名稱</div>
+            <div class="col-sm-4 col-md-3 title-txt price">單價</div>
+            <div class="col-sm-4 col-md-1 title-txt quantity">數量</div>
+            <div class="col-sm-4 col-md-2 title-txt amount">小計</div>
+        </div>
+
+        <!-- 商品明細 -->
+        <div class="list d-flex flex-wrap">
+            <div class="col-12 col-sm-12 col-md-6 detail-txt product-name">74%純手工無添加巧克力</div>
+            <div class="col-4 col-sm-4 col-md-3 detail-txt price">$250</div>
+            <div class="col-4 col-sm-4 col-md-1 detail-txt quantity">x2</div>
+            <div class="col-4 col-sm-4 col-md-2 detail-txt amount">$500</div>
+        </div>
+
+        <hr class="product-line">
+
+        <div class="list d-flex flex-wrap">
+            <div class="col-12 col-sm-12 col-md-6 detail-txt product-name">74%包種茶巧克力Bar</div>
+            <div class="col-4 col-sm-4 col-md-3 detail-txt price">$280</div>
+            <div class="col-4 col-sm-4 col-md-1 detail-txt quantity">x3</div>
+            <div class="col-4 col-sm-4 col-md-2 detail-txt amount">$740</div>
+        </div>
+
+            <hr>
+
+            <!-- 金額統計 -->
+            <div class="row amount">
+                <div class="col-md-10 detail-txt">總數量</div>
+                <div class="col-md-2 detail-txt">5</div>
+            </div>
+            <div class="row amount">
+                <div class="col-md-10 detail-txt">運費</div>
+                <div class="col-md-2 detail-txt">$60</div>
+            </div>
+            <div class="row amount">
+                <div class="col-md-10 detail-txt">總金額</div>
+                <div class="col-md-2 detail-txt">$1,300</div>
+            </div>
+
+            <hr>
+
+            <!-- 收貨人資料 -->
+            <div class="recive-info">
+                <h3 class="tag">收貨人資料</h3>
+
+                <div class="row">
+                    <label for="name" class="col-md-2 mytag">姓名：</label>
+                    <div class="col-md-4">
+                        <span class="txt"> 超級團隊 先生 </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="mobile" class="col-md-2 mytag">手機：</label>
+                    <div class="col-md-10">
+                        <span class="txt"> 0988888888 </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="phone" class="col-md-2 mytag">市話：</label>
+                    <div class="col-md-10">
+                        <span class="txt"> 04-12345678 </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="email" class="col-md-2 mytag">email：</label>
+                    <div class="col-md-10">
+                        <span class="txt"> cioccolata@gmail.com </span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="address" class="col-md-2 mytag">地址：</label>
+
+                    <div class="col-md-10">
+                        <span class="txt"> 臺中市西區草悟道88號 </span>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- 按鈕 -->
+            <div class="form-group row button-area">
+                <button type="submit" class="btn mybtn back">回到首頁</button>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+    <script src="{{ asset('/js/tw-city-selector.js') }}"></script>
+    <script>
+        new TwCitySelector({
+            el: '.city-selector-set',
+            elCounty: '.county',
+            elDistrict: '.district',
+            elZipcode: '.zipcode'
+        });
+    </script>
+
+</body>
+
+</html>

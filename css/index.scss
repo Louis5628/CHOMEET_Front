@@ -1,0 +1,1177 @@
+@import "_style_guide.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&display=swap");
+
+@mixin news_1500px {
+    @media (min-width: 1500px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1205px) {
+        @content;
+    }
+}
+
+@mixin notebook {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin pad {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+
+.back-to-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $comp-link;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+    opacity: 0.5;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+
+    &:hover{
+        background-color: $comp-link-hover;
+        color: $fc-white;
+    }
+}
+
+.banner {
+    position: relative;
+
+    .swiper-container {
+        width: 100%;
+
+        height: 100%;
+
+        .swiper-slide {
+            .banner-img {
+                //    background-image: url(/img/index/1920x1080\ banner01.jpg);
+                background-position: center;
+                background-position: 60% 10%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 667px;
+
+                @include mobile(){
+                    height: 768px;
+                }
+
+                @include pad{
+                    height: 900px;
+                }
+
+                @include notebook{
+                    height: 900px;
+                }
+             
+                @include desktop {
+                    height: 1080px;
+                }
+            }
+        }
+    }
+    .logo {
+        background-image: url(/img/index/CHOMEET-LOGO-White.svg);
+        background-size: 110%;
+        background-position: -5px 0px;
+        background-repeat: no-repeat;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 180px;
+        left: calc(50% - 50px);
+        z-index: 1;
+
+        @include mobile{
+            top: 210px;
+        }
+
+        @include pad{
+            background-position: -15px 0px;
+            width: 150px;
+            height: 150px;
+            top: 200px;
+            left: calc(50% - 75px);
+        }
+
+        @include desktop {
+            width: 240px;
+            height: 240px;
+            top: 250px;
+            left: calc(50% - 120px);
+        }
+    }
+    .text {
+        z-index: 1;
+        position: absolute;
+        top: 285px;
+        // left: calc(50% - 250px);
+        font-family: "Noto Serif TC", serif;
+
+        @include mobile {
+            // left: calc(50% - 300px);
+            top: 320px;
+        }
+
+        @include pad {
+            // left: calc(50% - 340px);
+            top: 350px;
+        }
+
+        @include desktop{
+            top: 500px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            font-family: "Noto Serif TC", serif;
+
+            @include mobile {
+                font-size: 30px;
+            }
+
+            @include pad {
+                font-size: 54px;
+            }
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 16px;
+            color: white;
+            color: white;
+            font-family: "Noto Serif TC", serif;
+            &:nth-child(2) {
+                margin-bottom: 35px;
+            }
+
+            @include mobile {
+                font-size: 24px;
+                &:nth-child(2) {
+                    margin-bottom: 40px;
+                }
+            }
+
+            @include pad {
+                font-size: 40px;
+                &:nth-child(2) {
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+//關於我們
+.section-1 {
+    padding-top: 80px;
+    position: relative;
+
+    @include pad {
+        padding-top: 150px;
+    }
+    .container {
+        max-width: 85%;
+
+        @include notebook {
+            max-width: 1530px;
+        }
+
+        @include pad {
+            max-width: 90%;
+        }
+
+        //768 出現
+        .title {
+            h1 {
+              
+                margin-bottom: 5px;
+                color: $fc-title;
+            }
+            h5 {
+                margin-bottom: 50px;
+                margin-left: 110px;
+
+                color: $fc-title-en;
+                position: relative;
+
+                @include pad {
+                    margin-left: 225px;
+                }
+
+                @include desktop {
+                    margin-bottom: 95px;
+                }
+
+                &::after {
+                    content: "";
+                    width: 30%;
+                    height: 1px;
+                    background-color: $fc-line;
+                    position: absolute;
+                    right: 105%;
+                    top: 50%;
+                }
+            }
+        }
+
+        .pic {
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 90%;
+                height: 100%;
+                background-color: $bgc-about;
+
+                position: absolute;
+                right: -8.8%;
+                top: 6%;
+                z-index: -1;
+
+                @include pad {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+
+                    left: 30px;
+                    bottom: 20px;
+                }
+            }
+
+            .pic-sm {
+                position: absolute;
+                bottom: -150px;
+                left: -60px;
+                z-index: 1;
+                width: auto;
+            }
+        }
+
+        .text {
+            padding-left: 0px;
+
+            @include pad {
+                padding-left: 90px;
+            }
+
+            .title {
+                h1 {
+                    margin-bottom: 5px;
+                    color: $fc-title;
+                }
+                h5 {
+                    margin-bottom: 50px;
+                    margin-left: 225px;
+                    color: $fc-title-en;
+                    position: relative;
+
+                    @include desktop {
+                        margin-bottom: 95px;
+                    }
+
+                    &::after {
+                        content: "";
+                        width: 185px;
+                        height: 1px;
+                        background-color: $fc-line;
+                        position: absolute;
+                        right: 100px;
+                        top: 50%;
+                    }
+                }
+            }
+            p {
+                line-height: 40px;
+                margin-bottom: 60px;
+                margin-top: 70px;
+
+                @include desktop {
+                    margin-bottom: 140px;
+                }
+
+                @include pad {
+                    margin-top: 0px;
+                }
+            }
+            .link {
+              
+                color: $fc-link;
+
+                h4{         
+                    padding: 15px;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        width: 100px;
+                        height: 1px;
+                        background-color: $fc-line;
+                        position: absolute;
+                        right: 8px;
+                        top: 85%;
+    
+                        @include pad {
+                            width: 147px;
+                            right: 0px;
+                            top: 50px;
+                        }
+                    }
+                    &:hover {
+                        color: white;
+                        font-weight: bold;
+                        background-color: $comp-link-hover;
+                        opacity: 0.6;
+                        
+    
+                        &::after {
+                            background-color: white;
+                            height: 2px;
+    
+                            @include pad {
+                                height: 3px;
+                            }
+                        }
+                    }
+
+                    i {
+                        font-size: 20px;
+    
+                        @include pad {
+                            font-size: 30px;
+                        }
+                    }
+    
+                }
+
+            }
+        }
+    }
+}
+
+.pics-1 {
+    position: relative;
+    margin-top: 130px;
+
+    @include notebook {
+        margin-top: 40px;
+    }
+    .beans {
+        @include pad {
+            content: url(/img/index/index-new-bean-01-600x310.png);
+        }
+    }
+
+    .pic-md {
+        position: absolute;
+        top: -80px;
+        right: 0%;
+        z-index: -1;
+
+        @include notebook {
+            top: 150px;
+        }
+
+        img {
+            width: 100%;
+            height: 175px;
+
+            @include notebook {
+                height: 100%;
+            }
+
+            @include pad {
+                height: 375px;
+            }
+        }
+    }
+}
+
+//認識巧克力
+.section-2 {
+    position: relative;
+    padding-top: 0px;
+    margin-bottom: 50px;
+
+    @include pad {
+        padding-top: 60px;
+        margin-bottom: 0px;
+    }
+
+    @include notebook {
+        padding-top: 175px;
+    }
+
+    @include desktop {
+        padding-top: 100px;
+    }
+
+    .container {
+        max-width: 85%;
+
+        @include pad {
+            max-width: 100%;
+        }
+
+        .row {
+            //968px 以下出現的title
+            .title {
+                h1 {
+                    color: $fc-title;
+                    margin-bottom: 10px;
+                }
+                h5 {
+                    margin-bottom: 30px;
+                    margin-left: 120px;
+                    color: $fc-title-en;
+                    position: relative;
+
+                    @include pad {
+                        margin-bottom: 95px;
+                        margin-left: 255px;
+                    }
+                    &::after {
+                        content: "";
+                        width: 90px;
+                        height: 1px;
+                        background-color: $fc-line;
+                        position: absolute;
+                        left: -100px;
+                        top: 50%;
+
+                        @include pad {
+                            width: 200px;
+                            left: -220px;
+                            top: 50%;
+                        }
+                    }
+                }
+            }
+
+            .text {
+                padding: 0px;
+
+                @include pad {
+                    padding: 0 30px;
+                }
+
+                @include notebook {
+                    padding-left: 70px;
+                    padding-right: 200px;
+                    padding-top: 100px;
+                }
+
+                .title {
+                    letter-spacing: 5px;
+                    h1 {
+                        font-size: 44px;
+                        color: rgb(77, 77, 77);
+                        margin-bottom: 10px;
+                    }
+                    h5 {
+                        margin-bottom: 95px;
+                        margin-left: 255px;
+                        color: rgb(128, 128, 128);
+                        position: relative;
+                        &::after {
+                            content: "";
+                            width: 200px;
+                            height: 2px;
+                            background-color: rgb(187, 145, 109);
+                            position: absolute;
+                            left: -220px;
+                            top: 50%;
+                        }
+                    }
+                }
+                p {
+                    line-height: 40px;
+                    margin-bottom: 50px;
+
+                    @include pad {
+                        margin-bottom: 100px;
+                    }
+
+                    @include desktop {
+                        margin-bottom: 165px;
+                    }
+                }
+                .link {
+              
+                    color: $fc-link;
+
+                    h4{         
+                        padding: 15px;
+                        position: relative;
+                        &::after {
+                            content: "";
+                            width: 100px;
+                            height: 1px;
+                            background-color: $fc-line;
+                            position: absolute;
+                            right: 8px;
+                            top: 85%;
+        
+                            @include pad {
+                                width: 147px;
+                                right: 0px;
+                                top: 50px;
+                            }
+                        }
+                        &:hover {
+                            color: white;
+                            font-weight: bold;
+                            background-color: $comp-link-hover;
+                            opacity: 0.6;
+                            
+        
+                            &::after {
+                                background-color: white;
+                                height: 2px;
+        
+                                @include pad {
+                                    height: 3px;
+                                }
+                            }
+                        }
+    
+                        i {
+                            font-size: 20px;
+        
+                            @include pad {
+                                font-size: 30px;
+                            }
+                        }
+        
+                    }
+    
+                }
+            }
+
+            .pic {
+                &:first-child {
+                    @include pad {
+                        content: url(/img/index/introduction-01-550x640.png);
+                    }
+                }
+
+                &:nth-child(2) {
+                    @include pad {
+                        content: url(/img/index/introduction-02-550x640.png);
+                    }
+                }
+
+                &:nth-child(3) {
+                    @include pad {
+                        content: url(/img/index/introduction-03-550x640.png);
+                    }
+                }
+
+                &:last-child {
+                    @include pad {
+                        content: url(/img/index/introduction-04-550x640.png);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//消息公告
+.section-3 {
+    margin-bottom: 90px;
+    .container {
+        max-width: 100%;
+        margin: auto;
+        position: relative;
+
+        @include pad {
+            max-width: 95%;
+        }
+
+        .pic-sm-index {
+            position: absolute;
+            width: 20%;
+            height: auto;
+            z-index: 1;
+
+            @include pad {
+                top: -7%;
+                right: 0%;
+            }
+
+            @include notebook() {
+                top: -0%;
+                right: 0%;
+            }
+
+            @include desktop {
+                top: -5%;
+                right: -2%;
+            }
+
+            @include news_1500px {
+                top: -10%;
+                right: 0%;
+            }
+        }
+
+        .pic-sm-phone {
+            position: absolute;
+            width: 20%;
+            height: auto;
+            z-index: 1;
+
+            top: 5%;
+            right: 0%;
+        }
+
+        //768 出現title
+        .title {
+            h1 {
+                margin-bottom: 10px;
+                color: $fc-title;
+            }
+            h5 {
+                margin-bottom: 30px;
+                margin-left: 120px;
+                color: $fc-title-en;
+                position: relative;
+                &::after {
+                    content: "";
+                    width: 90px;
+                    height: 1px;
+                    background-color: $fc-line;
+                    position: absolute;
+                    left: -100px;
+                    top: 50%;
+                }
+            }
+        }
+
+        .news-area {
+            background-color: rgb(220, 207, 201);
+            padding: 35px 55px;
+            position: relative;
+
+            @include pad {
+                padding: 100px 120px;
+            }
+
+            .title {
+                margin-bottom: 100px;
+                letter-spacing: 5px;
+                h1 {
+                    margin-bottom: 10px;
+
+                    color: rgb(77, 77, 77);
+                }
+                h5 {
+                    margin-bottom: 95px;
+                    margin-left: 245px;
+                    color: rgb(128, 128, 128);
+                    position: relative;
+
+                    &::after {
+                        content: "";
+                        width: 200px;
+                        height: 2px;
+                        background-color: rgb(187, 145, 109);
+                        position: absolute;
+                        left: -210px;
+                        top: 50%;
+                    }
+                }
+            }
+
+            .col-md-12 {
+                .second {
+                    @include news_1500px {
+                        margin-left: 145px;
+                    }
+                }
+
+                .news-group {
+                    justify-content: space-around;
+                    @include news_1500px {
+                        justify-content: start;
+                    }
+                }
+
+                .news {
+                    margin-bottom: 50px;
+                    margin-right: 0px;
+                    width: fit-content;
+                    @include pad {
+                        margin-right: 50px;
+                    }
+
+                    .date {
+                        min-width: 90px;
+                        height: 90px;
+
+                        @include pad {
+                            width: 210px;
+                            height: 210px;
+                        }
+
+                        background-color: rgb(198, 162, 128);
+                        position: relative;
+
+                        .month {
+                            font-size: 30px;
+                            font-weight: 100;
+                            color: white;
+                            padding-left: 10px;
+
+                            @include pad {
+                                font-size: 68px;
+                                padding-left: 20px;
+                            }
+                        }
+                        .day {
+                            font-size: 30px;
+                            font-weight: 100;
+                            color: white;
+                            text-align: right;
+                            padding-right: 10px;
+
+                            @include pad {
+                                font-size: 68px;
+                                padding-right: 20px;
+                            }
+                        }
+
+                        .slash{
+                            position: absolute;
+                            top: 10%;
+                            left: 10%;
+                            transform: rotate(0deg);
+                           
+                            @include pad {
+                                transform: rotate(-2deg);
+                                top: 15%;
+                                left: 13%;
+                            }
+
+                            img{
+                                width: 70px;
+                                height: 70px;
+
+                                @include pad{
+                                    width: 150px;
+                                    height: 150px;
+                                }
+                            }
+                        }
+                        &:hover {
+                            content: url("http://dummyimage.com/90x90/eb00eb/fff");
+
+                            @include pad {
+                                content: url("http://dummyimage.com/210x210/eb00eb/fff");
+                            }
+                        }
+                    }
+
+                    .text {
+                        position: relative;
+                        background-color: white;
+                        padding: 10px 20px 0 10px;
+                        border-radius: 0px 10px 10px 0;
+                        width: 175px;
+                        @include mobile{
+                            width: 100%;    
+                        }
+
+                        @include pad {
+                            padding: 28px 43px 65px 30px;
+                            width: 60%;
+                            border-radius: 0px 20px 20px 0;
+                        }
+
+                        h3 {
+                            font-size: 14px;
+                            font-weight: bold;
+                            letter-spacing: 0px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+
+                            @include pad {
+                                font-size: 30px;
+                            }
+                        }
+                        p {
+                            font-size: 12px;
+                            letter-spacing: 0px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            //行數限制
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            white-space: normal;
+
+                            @include pad {
+                                font-size: 18px;
+                                -webkit-line-clamp: 3;
+                            }
+                        }
+                        .more {
+                            font-size: 14px;
+                            position: absolute;
+                            bottom: 15px;
+                            left: 3%;
+
+                            @include pad {
+                                font-size: 20px;
+                                bottom: 22px;
+                                left: 69%;
+                            }
+                        }
+                    }
+                }
+            }
+            .link {
+                width: 200px;
+                height: 60px;
+                padding-bottom: 10px;
+                padding-right: 20px;
+                text-align: center;
+                position: relative;
+                font-size: 24px;
+                text-decoration: none;
+                color: $comp-link-hover;
+                i {
+                    font-size: 30px;
+                }
+
+                &::after {
+                    content: "";
+                    width: 140px;
+                    height: 1px;
+                    background-color: $comp-link-hover;
+                    position: absolute;
+                    left: 60px;
+                    top: 45px;
+                }
+
+                &:hover {
+                    color: white;
+                    font-weight: bold;
+                    background-color: $comp-link-hover;
+                    opacity: 0.6;
+
+                    &::after {
+                        background-color: white;
+                        height: 3px;
+                    }
+                }
+            }
+        }
+
+        .link {
+           
+            padding: 10px;
+            text-align: center;
+            margin-top: 25px;
+            position: relative;
+
+            color: $fc-link;
+
+            @include pad {
+                width: 200px;
+                height: 60px;
+            }
+
+            i {
+                font-size: 20px;
+
+                @include pad {
+                    font-size: 30px;
+                }
+            }
+
+            &::after {
+                content: "";
+                width: 100px;
+                height: 1px;
+                background-color: $fc-line;
+                position: absolute;
+                right: 8px;
+                top: 85%;
+
+                @include pad {
+                    width: 147px;
+                    right: 0px;
+                    top: 50px;
+                }
+            }
+
+            &:hover {
+                color: white;
+                font-weight: bold;
+                background-color: $comp-link-hover;
+                opacity: 0.6;
+
+                &::after {
+                    background-color: white;
+                    height: 2px;
+
+                    @include pad {
+                        height: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section-4 {
+    position: relative;
+    margin-bottom: 140px;
+    .pic {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 350px;
+
+        position: relative;
+        z-index: -1;
+
+        @include pad {
+            height: 640px;
+        }
+    }
+    .container {
+        max-width: 1220px;
+
+        position: absolute;
+        top: calc(50% - 112px);
+        left: 0;
+        z-index: 1;
+
+        @include desktop {
+            left: calc(50% - 610px);
+        }
+        .text {
+            h1 {
+                font-size: 16px;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+                margin-bottom: 60px;
+
+                @include pad {
+                    font-size: 44px;
+                }
+            }
+        }
+    }
+}
+
+//巧克力品項
+.section-5 {
+    margin-bottom: 80px;
+    .container {
+        max-width: 1920px;
+        .title {
+            text-align: center;
+            h1 {
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: $fc-title;
+            }
+            h5 {
+                margin-bottom: 40px;
+                color: $fc-title-en;
+                position: relative;
+
+                @include pad {
+                    margin-bottom: 95px;
+                }
+                &::after {
+                    content: "";
+                    width: 100px;
+                    height: 1px;
+                    background-color: $fc-line;
+                    position: absolute;
+                    top: 20px;
+                    left: calc(50% - 50px);
+
+                    @include pad {
+                        width: 200px;
+                        top: 40px;
+                        left: calc(50% - 100px);
+                    }
+                }
+            }
+        }
+
+        .swiper-container {
+            margin-bottom: 65px;
+            .swiper-slide {
+                .card {
+                    position: relative;
+                    .card-img-top {
+                        width: auto;
+                        transition-duration: 0.5s ease;
+                        // &:hover {
+                        //     transition-duration: 0.5s ease;
+                        //     content: url(/img/index/teaBar04-550x660.jpg);
+                        // }
+                    }
+
+                    .card-body {
+                        padding-top: 28px;
+                       
+                        .product_name {
+                            margin-bottom: 0px;
+                            font-weight: bold;
+                            letter-spacing: 0;
+                            @include pad {
+                                margin-bottom: 16px;
+                            }
+                        }
+
+                        .content {
+                            margin-bottom: 20px;
+                            @include pad {
+                                margin-bottom: 0px;
+                            }
+                        }
+                        .price {
+                            text-align: end;
+
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .swiper-button-next,.swiper-button-prev{
+                color: #f39700;
+            }
+        }
+
+        .link {
+            // width: 120px;
+            // height: 40px;
+            // padding-bottom: 10px;
+            // padding-right: 20px;
+
+            padding: 10px;
+
+            position: relative;
+            color: $fc-link;
+
+            @include pad {
+                width: 200px;
+                height: 60px;
+            }
+
+            i {
+                font-size: 20px;
+
+                @include pad {
+                    font-size: 30px;
+                }
+            }
+            &::after {
+                content: "";
+                width: 100px;
+                height: 1px;
+                background-color: $fc-line;
+                position: absolute;
+                right: 4px;
+                top: 85%;
+
+                @include pad {
+                    width: 147px;
+                    right: 0px;
+                    top: 50px;
+                }
+            }
+
+            &:hover {
+                color: white;
+                font-weight: bold;
+                background-color: $comp-link-hover;
+                opacity: 0.6;
+
+                &::after {
+                    background-color: white;
+                    height: 2px;
+
+                    @include pad {
+                        height: 3px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//圖片與色塊
+.pics {
+    img {
+
+        width: 100%;
+        margin-bottom: 30px;
+        z-index: 2;
+
+        @include pad() {
+            content: url(/img/index/04-1800X545.png);
+            margin-bottom: -140px;
+            width: 80%;
+            margin-left: -10%;
+        }
+    }
+
+    .pic-gray {
+        display: none;
+        background-color: rgb(238, 236, 235);
+        
+        @include pad {
+            display: block;
+            width: 100%;
+            height: 225px;
+        }
+    }
+
+    .pic-brown {
+        width: 85%;
+        height: 85px;
+        background-color: rgb(201, 184, 172);
+        margin-top: -85px;
+        margin-left: 15%;
+
+        z-index: 2;
+        @include pad {
+        }
+    }
+}
+

@@ -1,0 +1,469 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 微軟正黑體;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+a {
+  color: unset;
+}
+
+a:hover {
+  color: unset;
+  text-decoration: unset;
+}
+
+a:visited {
+  color: unset;
+}
+
+:root h1 {
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+:root h2 {
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+:root h3 {
+  font-weight: normal;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+:root h4 {
+  font-weight: normal;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+:root h5 {
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+:root p {
+  font-size: 16px;
+  margin: 0%;
+}
+
+@media (min-width: 768px) {
+  :root h1 {
+    font-weight: bold;
+    font-size: 44px;
+    letter-spacing: 5px;
+    margin: 0;
+  }
+  :root h2 {
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin: 0;
+  }
+  :root h3 {
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  :root h4 {
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  :root h5 {
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  :root p {
+    font-size: 18px;
+    margin: 0%;
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  position: relative;
+}
+
+main .banner {
+  width: 100%;
+  height: 575px;
+  background-image: url(/img/knowcoco-banner-1920x575.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .title {
+  width: 510px;
+  height: 140px;
+  padding-top: 54px;
+  background-color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 488px;
+  left: calc(50% - 255px);
+}
+
+main .title h1 {
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+main .title h5 {
+  color: #808080;
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+main .cocoa {
+  margin: auto;
+  margin-top: 156px;
+  width: 85%;
+  height: 805px;
+  background-image: url(/img/knowcoco-1637x805.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .content {
+  margin: auto;
+  margin-top: 80px;
+  width: 58%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content .cocoa-title {
+  position: relative;
+}
+
+main .content .cocoa-title h2 {
+  width: 300px;
+  letter-spacing: 5px;
+  position: absolute;
+  left: calc(100% - 150px);
+}
+
+@media (max-width: 414px) {
+  main .content .cocoa-title h2 {
+    left: calc(100% - 120px);
+    top: -10px;
+  }
+}
+
+main .content .cocoa-title hr {
+  width: 200px;
+  height: 1px;
+  background-color: #bb916d;
+  position: absolute;
+  left: -125px;
+  top: 36px;
+}
+
+@media (max-width: 768px) {
+  main .content .cocoa-title hr {
+    width: 190px;
+    left: calc(100% - 130px);
+    top: 35px;
+  }
+}
+
+@media (max-width: 414px) {
+  main .content .cocoa-title hr {
+    width: 180px;
+    left: calc(100% - 100px);
+    top: 20px;
+  }
+}
+
+main .content p {
+  margin: auto;
+  margin-top: 100px;
+  line-height: 50px;
+}
+
+@media (max-width: 414px) {
+  main .content p {
+    margin-top: 60px;
+    line-height: 45px;
+    width: 95%;
+  }
+}
+
+main .plant {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 304px;
+  margin-bottom: 100px;
+}
+
+main .plant .photo-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .plant .photo-group .left {
+  margin-right: 45px;
+}
+
+main .plant .photo-group .left .pic-1 {
+  background-image: url(/img/knowcoco-01-523x520.jpg);
+  margin-bottom: 45px;
+}
+
+main .plant .photo-group .left .pic-3 {
+  background-image: url(/img/knowcoco-03-523x520.jpg);
+}
+
+main .plant .photo-group .right {
+  margin-top: 77px;
+}
+
+main .plant .photo-group .right .pic-2 {
+  background-image: url(/img/knowcoco-02-523x520.jpg);
+  margin-bottom: 45px;
+}
+
+main .plant .photo-group .right .pic-4 {
+  background-image: url(/img/knowcoco-04-523x520.jpg);
+}
+
+main .plant .photo-group .pic-1,
+main .plant .photo-group .pic-2,
+main .plant .photo-group .pic-3,
+main .plant .photo-group .pic-4 {
+  width: 524px;
+  height: 520px;
+  background-position: center;
+  background-size: cover;
+}
+
+main .plant .method .method-content {
+  margin: auto;
+  width: 70%;
+  margin-top: 100px;
+  position: relative;
+}
+
+main .plant .method .method-content .method-title h2 {
+  letter-spacing: 5px;
+  text-align: left;
+}
+
+main .plant .method .method-content .method-title hr {
+  width: 160px;
+  height: 1px;
+  background-color: #bb916d;
+  position: absolute;
+  top: 36px;
+  left: 26px;
+}
+
+@media (max-width: 768px) {
+  main .plant .method .method-content .method-title hr {
+    width: 150px;
+    top: 33px;
+    left: 26px;
+  }
+}
+
+main .plant .method .method-content p {
+  margin: auto;
+  margin-top: 50px;
+  line-height: 60px;
+}
+
+@media (max-width: 414px) {
+  main .plant .method .method-content p {
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 1750px) {
+  .plant .photo-group {
+    width: 50%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .plant .photo-group .left {
+    margin-right: 0px !important;
+  }
+  .plant .photo-group .right {
+    margin-top: 45px !important;
+  }
+  .plant .method {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media (max-width: 1080px) {
+  .plant {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .plant .photo-group {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .plant .photo-group .left {
+    margin-right: 0px !important;
+  }
+  .plant .photo-group .right {
+    margin-top: 45px !important;
+  }
+  .plant .method {
+    margin: auto;
+    width: 100%;
+  }
+  .plant .method .method-content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  main .cocoa {
+    width: 100%;
+    height: 600px;
+  }
+  main .content {
+    width: 90%;
+  }
+  .plant .method .method-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 536px) {
+  main .banner {
+    width: 100%;
+    height: 300px;
+  }
+  main .title {
+    width: 250px;
+    height: 140px;
+    padding-top: 25px;
+    top: 260px;
+    left: calc(50% - 125px);
+  }
+  main .title h1 {
+    letter-spacing: 2px;
+  }
+  main .cocoa {
+    width: 100%;
+    height: 505px;
+  }
+  main .content {
+    width: 90%;
+  }
+  main .plant {
+    margin-top: 100px;
+  }
+  main .plant .photo-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  main .plant .photo-group .left {
+    width: 100%;
+    margin: 0px;
+  }
+  main .plant .photo-group .left .pic-1,
+  main .plant .photo-group .left .pic-3 {
+    width: 100%;
+    height: 400px;
+  }
+  main .plant .photo-group .right {
+    width: 100%;
+    margin: 0px;
+  }
+  main .plant .photo-group .right .pic-2,
+  main .plant .photo-group .right .pic-4 {
+    width: 100%;
+    height: 400px;
+  }
+  main .plant .method .method-content {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=chocolate.css.map */

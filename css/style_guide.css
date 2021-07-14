@@ -1,0 +1,67 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 微軟正黑體;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+body a {
+  color: unset;
+}
+
+body a:hover {
+  color: unset;
+  text-decoration: unset;
+}
+
+body a:visited {
+  color: unset;
+}
+
+body h1 {
+  font-weight: bold;
+  font-size: 44px;
+}
+
+body h2 {
+  font-weight: 100;
+  font-size: 40px;
+}
+
+body h3 {
+  font-weight: normal;
+  font-size: 30px;
+}
+
+body h4 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+body h5 {
+  font-weight: normal;
+  font-size: 24px;
+}
+
+body h6 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+body ul,
+body ol {
+  list-style: none;
+  margin: 0%;
+}
+
+body p {
+  font-size: 18px;
+  margin: 0%;
+}
+/*# sourceMappingURL=style.css.map */
